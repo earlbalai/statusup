@@ -1,5 +1,7 @@
 class User < ApplicationRecord
 
+  has_many :pages
+
   enum role: [:user, :support, :admin, :platform_admin]
   after_initialize :set_default_role, :if => :new_record?
 
