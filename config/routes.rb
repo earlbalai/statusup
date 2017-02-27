@@ -1,3 +1,5 @@
+require "./lib/custom_domain_constraint"
+
 Rails.application.routes.draw do
   devise_for :users
 
