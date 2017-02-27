@@ -10,10 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170227053308) do
+ActiveRecord::Schema.define(version: 20170227054054) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "components", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "incident_templates", force: :cascade do |t|
+    t.string   "name"
+    t.string   "status"
+    t.string   "title"
+    t.text     "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "incidents", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "status"
+    t.text     "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "maintenances", force: :cascade do |t|
+    t.string   "name"
+    t.text     "details"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.boolean  "remind_subscribers"
+    t.boolean  "set_inprogress_at_start"
+    t.boolean  "set_complete_at_end"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
 
   create_table "pages", force: :cascade do |t|
     t.integer  "owner_id",                                                        null: false
