@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_id: 1
+  private: false
+  name: MyString
+  support_url: MyText
+  website_url: MyText
+  notification_from_email: MyString
+  sms_country_code: MyString
+  organization_name: MyString
+  timezone: MyString
+  search_engine_visibility: false
+  layout_id: 1
+  body_background_color: MyString
+  font_color: MyString
+  light_font_color: MyString
+  greens: MyString
+  yellows: MyString
+  oranges: MyString
+  reds: MyString
+  blues: MyString
+  link_color: MyString
+  border_color: MyString
+  graph_color: MyString
+  logo: MyString
+  favicon: MyString
+  headline: MyText
+  about: MyText
+
+two:
+  owner_id: 1
+  private: false
+  name: MyString
+  support_url: MyText
+  website_url: MyText
+  notification_from_email: MyString
+  sms_country_code: MyString
+  organization_name: MyString
+  timezone: MyString
+  search_engine_visibility: false
+  layout_id: 1
+  body_background_color: MyString
+  font_color: MyString
+  light_font_color: MyString
+  greens: MyString
+  yellows: MyString
+  oranges: MyString
+  reds: MyString
+  blues: MyString
+  link_color: MyString
+  border_color: MyString
+  graph_color: MyString
+  logo: MyString
+  favicon: MyString
+  headline: MyText
+  about: MyText

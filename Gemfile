@@ -43,6 +43,7 @@ gem 'neat'
 gem 'wicked'
 gem 'simple_form'
 gem 'carrierwave'
+gem 'high_voltage'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
